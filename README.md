@@ -1,66 +1,17 @@
-## Foundry
+# Практическая работа 01: Фабрика криптозомби
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Смарт-контракт `ZombieFactory` на Solidity ^0.8.20 и автоматические тесты на Foundry (Forge).
 
-Foundry consists of:
+## Структура
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- `src/ZombieFactory.sol` — контракт
+- `test/ZombieFactory.t.sol` — тесты
+- `test-output.txt` — результат `forge test`
+- `ANSWER.md` — ответ на контрольный вопрос
 
-## Documentation
+## Запуск
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```bash
+forge build
+forge test -vv
 ```

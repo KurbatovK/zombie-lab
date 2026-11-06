@@ -1,0 +1,20 @@
+No files changed, compilation skipped
+
+Ran 2 tests for test/Counter.t.sol:CounterTest
+[PASS] testFuzz_SetNumber(uint256) (runs: 256, μ: 52218, ~: 52547)
+[PASS] test_Increment() (gas: 51847)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 14.90ms (6.65ms CPU time)
+
+Ran 9 tests for test/ZombieFactory.t.sol:ZombieFactoryTest
+[PASS] testCreateZombie() (gas: 223204)
+[PASS] testDnaDependsOnSender() (gas: 347636)
+[PASS] testDnaWithinModulus() (gas: 189201)
+[PASS] testEmptyNameReverts() (gas: 37712)
+[PASS] testEventEmitted() (gas: 184324)
+[PASS] testFuzzDnaWithinModulus(address,string) (runs: 256, μ: 212369, ~: 188513)
+[PASS] testGetZombieUnknownIdReverts() (gas: 14433)
+[PASS] testSecondZombieSameOwnerReverts() (gas: 210502)
+[PASS] testTwoOwnersGetDifferentIds() (gas: 342984)
+Suite result: ok. 9 passed; 0 failed; 0 skipped; finished in 17.00ms (17.55ms CPU time)
+
+Ran 2 test suites in 20.62ms (31.90ms CPU time): 11 tests passed, 0 failed, 0 skipped (11 total tests)
